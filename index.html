@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wedding Invitation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="petals"></div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <img src="hero.jpg" class="hero-image" alt="Couple">
+
+    <div class="hero-overlay">
+
+        <p class="hero-small">
+            WITH JOYFUL HEARTS AND GOD'S ABUNDANT BLESSINGS
+        </p>
+
+        <h1 class="couple-name">
+            Megha <span>&</span> Jomin
+        </h1>
+
+        <p class="verse">
+            "I have found the one whom my soul loves."
+        </p>
+
+        <p class="verse-ref">
+            Song of Solomon 3:4
+        </p>
+
+    </div>
+
+</section>
+
+<!-- INVITATION -->
+
+<section class="section">
+
+    <h2 class="quote">
+        Love never gives up, never loses faith, is always hopeful.
+    </h2>
+
+    <p class="invite-text">
+        By the grace of Almighty God and with the blessings of our beloved families,
+        we warmly invite you to share in this joyous occasion.
+    </p>
+
+</section>
+
+<!-- COUPLE -->
+
+<section class="section">
+
+    <div class="person">
+
+        <h2>Megha Mariam Mathew</h2>
+
+        <p>
+            Daughter of Mr. Late Mathew &
+            Mrs. Roji Mathew
+        </p>
+
+    </div>
+
+    <div class="ampersand">&</div>
+
+    <div class="person">
+
+        <h2>Jomin K George</h2>
+
+        <p>
+            Son of
+            Mrs. Sheeja Vinod
+        </p>
+
+    </div>
+
+</section>
+
+<!-- COUNTDOWN -->
+
+<section class="section">
+
+    <h3 class="section-title">
+        COUNTING DOWN TO
+    </h3>
+
+    <div class="countdown">
+
+        <div class="count-box">
+            <span id="days">0</span>
+            <small>Days</small>
+        </div>
+
+        <div class="count-box">
+            <span id="hours">0</span>
+            <small>Hours</small>
+        </div>
+
+        <div class="count-box">
+            <span id="minutes">0</span>
+            <small>Minutes</small>
+        </div>
+
+        <div class="count-box">
+            <span id="seconds">0</span>
+            <small>Seconds</small>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EVENT -->
+
+<section class="section">
+
+    <div class="event-card">
+
+        <p class="event-type">
+            BETROTHAL
+        </p>
+
+        <h2>
+            Thursday , 31 December 2026
+        </h2>
+
+        <p>
+            11:30 AM onwards
+        </p>
+
+        <div class="divider"></div>
+
+        <h3>
+            St. Marys Church
+        </h3>
+
+        <p>
+            Puthupadi, Kozhikode, Kerala
+        </p>
+
+        <button
+            id="openMapBtn"
+            class="btn">
+            Open in Maps
+        </button>
+
+    </div>
+
+</section>
+
+<!-- RSVP -->
+<!-- RSVP -->
+
+<section class="section">
+
+```
+<div class="rsvp-card">
+
+    <h3 class="section-title">
+        KINDLY RSVP
+    </h3>
+
+    <!-- Initial Buttons -->
+
+    <div id="rsvpOptions">
+
+        <div class="rsvp-buttons">
+
+            <button
+                id="attendBtn"
+                class="accept"
+                type="button">
+                Joyfully Attend 🎉
+            </button>
+
+            <button
+                id="declineBtn"
+                class="decline"
+                type="button">
+                Regretfully Decline 🙏
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- RSVP Form -->
+
+    <div id="attendForm" class="hidden">
+
+        <input
+            type="text"
+            id="guestName"
+            placeholder="Your Full Name *">
+
+        <input
+            type="tel"
+            id="guestPhone"
+            placeholder="WhatsApp Number *">
+
+        <h4 class="guest-title">
+            How many guests will attend?
+        </h4>
+
+        <div class="guest-counter">
+
+            <button
+                id="minusBtn"
+                class="counter-btn"
+                type="button">
+                −
+            </button>
+
+            <span id="guestCount">
+                1
+            </span>
+
+            <button
+                id="plusBtn"
+                class="counter-btn"
+                type="button">
+                +
+            </button>
+
+        </div>
+
+        <div class="form-buttons">
+
+            <button
+                id="backBtn"
+                class="backBtn"
+                type="button">
+                Back
+            </button>
+
+            <button
+                id="confirmBtn"
+                class="confirmBtn"
+                type="button">
+                Confirm Attendance
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Success Screen -->
+
+    <div id="successBox" class="hidden">
+
+        <div class="success-emoji">
+            🎉
+        </div>
+
+        <h2 id="successName">
+            See you there!
+        </h2>
+
+        <p class="success-text">
+            We're thrilled to celebrate with you.
+        </p>
+
+    </div>
+
+    <!-- Decline Screen -->
+
+    <div id="declineBox" class="hidden">
+
+        <div class="success-emoji">
+            🙏
+        </div>
+
+        <h2>
+            Thank You
+        </h2>
+
+        <p class="success-text">
+            We're grateful for your response.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- SHARE -->
+
+<section class="section">
+
+    <h2 class="gratitude">
+        With Love & Gratitude
+    </h2>
+
+    <p class="invite-text">
+        Your presence, prayers and blessings
+        will make this occasion truly memorable.
+    </p>
+
+    <button
+        id="shareBtn"
+        class="whatsapp">
+        Share on WhatsApp
+    </button>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
