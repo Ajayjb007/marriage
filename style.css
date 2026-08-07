@@ -538,3 +538,89 @@ MOBILE RESPONSIVE
 }
 
 }
+
+/* =========================
+   MUSIC BUTTON
+========================= */
+
+.music-btn{
+    position:fixed;
+    top:20px;
+    right:20px;
+
+    width:60px;
+    height:60px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border:none;
+    border-radius:50%;
+
+    background:rgba(255,255,255,0.95);
+
+    box-shadow:0 4px 20px rgba(0,0,0,0.15);
+
+    cursor:pointer;
+
+    z-index:9999;
+
+    font-size:24px;
+
+    transition:all 0.3s ease;
+
+    animation:floatBell 3s ease-in-out infinite;
+}
+
+.music-btn:hover{
+    transform:scale(1.1);
+}
+
+.music-btn i{
+    color:#a37a12;
+    font-size:24px;
+}
+
+.music-btn.muted{
+    opacity:0.6;
+}
+
+.music-btn.muted i{
+    color:#999;
+}
+
+/* Floating Effect */
+
+@keyframes floatBell{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-5px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .music-btn{
+        width:55px;
+        height:55px;
+        top:15px;
+        right:15px;
+    }
+
+    .music-btn i{
+        font-size:22px;
+    }
+
+}

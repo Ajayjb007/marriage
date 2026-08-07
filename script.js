@@ -401,3 +401,45 @@ window.addEventListener(
     );
 
 });
+
+const music = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
+
+let started = false;
+
+document.body.addEventListener("click", function firstClick(){
+
+    if(!started){
+
+        music.play().catch(()=>{});
+
+        started = true;
+    }
+
+    document.body.removeEventListener("click", firstClick);
+
+});
+
+musicBtn.addEventListener("click", () => {
+
+    if(music.paused){
+
+        music.play();
+
+        musicBtn.innerHTML =
+        '<i class="fa-solid fa-bell"></i>';
+
+        musicBtn.classList.remove("muted");
+
+    }else{
+
+        music.pause();
+
+        musicBtn.innerHTML =
+        '<i class="fa-solid fa-bell-slash"></i>';
+
+        musicBtn.classList.add("muted");
+
+    }
+
+});
