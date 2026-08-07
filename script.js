@@ -5,7 +5,7 @@
 // Change to your wedding date
 
 const weddingDate = new Date(
-    "December 31, 2026 11:30:00"
+    "August 22, 2026 11:30:00"
 ).getTime();
 
 function updateCountdown() {
@@ -51,8 +51,8 @@ setInterval(updateCountdown, 1000);
 
 const venue = {
 
-    lat: 11.576542,
-    lng: 75.825614
+    lat: 11.432924,
+    lng: 76.004706
 
 };
 
@@ -64,7 +64,7 @@ if(openMapBtn){
     openMapBtn.addEventListener("click", () => {
 
         const mapUrl =
-        `https://www.google.com/maps/search/?api=1&query=${venue.lat},${venue.lng}`;
+        `https://www.google.co.in/maps/place/kodenchery+parish+hall/@11.4313818,76.0055301,18.29z/data=!4m15!1m8!3m7!1s0x3ba66bc3af28155f:0xf6fcc1ae2539b57e!2sKodenchery,+Kerala+673580!3b1!8m2!3d11.4323285!4d76.0072749!16s%2Fm%2F05211bh!3m5!1s0x3ba66b432a8b5b59:0x53a128effcc052a6!8m2!3d11.4327406!4d76.0046642!16s%2Fg%2F11f9w5ck50?entry=ttu&g_ep=EgoyMDI2MDgwNS4xIKXMDSoASAFQAw%3D%3D`;
 
         window.open(mapUrl, "_blank");
 
